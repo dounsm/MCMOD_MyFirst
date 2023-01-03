@@ -1,6 +1,12 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "myfirst:block/first_block"
+    "up": "myfirst:block/touzi/touzi-1",
+    "north": "myfirst:block/touzi/touzi-2",
+    "south": "myfirst:block/touzi/touzi-3",
+    "west": "myfirst:block/touzi/touzi-4",
+    "east": "myfirst:block/touzi/touzi-5",
+    "down": "myfirst:block/touzi/touzi-6",
+    "particle": "myfirst:block/touzi/touzi-6"
   }
 }

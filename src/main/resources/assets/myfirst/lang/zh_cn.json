@@ -1,7 +1,6 @@
 {
-  "item.tntmod.frozen_tnt":"极寒TNT",
-  "block.tntmod.frozen_tnt": "极寒TNT",
-  "itemGroup.reactive_tnt": "反射型TNT",
-  "item.tntmod.high_pressure_tnt":"高压TNT",
-  "block.tntmod.high_pressure_tnt": "高压TNT"
+  "block.myfirst.first_block": "First Block",
+  "item.myfirst.first_block": "Hello world!",
+  "block.myfirst.touzi": "骰子",
+  "item.myfirst.touzi": "骰子"
 }
