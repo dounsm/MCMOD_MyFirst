@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "myfirst:block/first_block"
+    }
+  }
+}
