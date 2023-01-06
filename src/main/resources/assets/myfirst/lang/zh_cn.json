@@ -6,6 +6,8 @@
   "item.myfirst.huaji": "滑稽",
   "item.myfirst.counter": "计数器",
   "block.myfirst.counter": "计数器",
+  "item.myfirst.dynamic_dice": "动态骰子",
+  "block.myfirst.dynamic_dice": "动态骰子",
 
   "message.myfirst.counter_update": "计数: %d"
 }

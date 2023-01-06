@@ -28,18 +28,13 @@ public class TouZi extends Block {
   public TouZi(){
     super(Properties.of(Material.METAL, MaterialColor.COLOR_BLUE).strength(5f,6f).requiresCorrectToolForDrops());
   };
-  public BigInteger counter = new BigInteger("0");
-
-  @Override
-  public void tick(BlockState p_60462_, ServerLevel p_60463_, BlockPos p_60464_, Random p_60465_) {
-    super.tick(p_60462_, p_60463_, p_60464_, p_60465_);
-  }
 
   @Override
   public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
 //        return super.use(blockState,level,blockPos,player,interactionHand,blockHitResult);
     if(blockHitResult.getDirection()!= Direction.UP){return super.use(blockState,level,blockPos,player,interactionHand,blockHitResult);};
 //        if(player.getHandSlots() TntBlock.)
+    if(level.isClientSide()){return InteractionResult.SUCCESS;};
     if(player.getItemInHand(interactionHand).getItem().equals(Items.TNT) ) {
       level.explode(null, blockPos.getX(), blockPos.getY(), blockPos.getZ(), 10.0f, Explosion.BlockInteraction.DESTROY);
     }else if(player.getItemInHand(interactionHand).getItem() instanceof Huaji){

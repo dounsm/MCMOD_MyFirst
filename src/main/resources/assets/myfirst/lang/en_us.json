@@ -6,6 +6,8 @@
   "item.myfirst.huaji": "huaji",
   "item.myfirst.counter": "counter",
   "block.myfirst.counter": "counter",
+  "item.myfirst.dynamic_dice": "dynamic dice",
+  "block.myfirst.dynamic_dice": "dynamic dice",
 
   "message.myfirst.counter_update": "Count: %d"
 }

@@ -33,7 +33,7 @@ public class Counter extends Block implements EntityBlock {
       return InteractionResult.SUCCESS;
     };
     CounterEntity be = (CounterEntity) level.getBlockEntity(blockPos);
-    be.update(player);
+    be.update(blockState,level,blockPos,player,interactionHand,blockHitResult);
     return InteractionResult.SUCCESS;
   }
 }
