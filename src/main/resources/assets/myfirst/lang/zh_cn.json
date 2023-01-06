@@ -2,5 +2,10 @@
   "block.myfirst.first_block": "First Block",
   "item.myfirst.first_block": "Hello world!",
   "block.myfirst.touzi": "骰子",
-  "item.myfirst.touzi": "骰子"
+  "item.myfirst.touzi": "骰子",
+  "item.myfirst.huaji": "滑稽",
+  "item.myfirst.counter": "计数器",
+  "block.myfirst.counter": "计数器",
+
+  "message.myfirst.counter_update": "计数: %d"
 }

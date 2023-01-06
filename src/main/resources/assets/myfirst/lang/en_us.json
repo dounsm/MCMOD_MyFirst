@@ -2,5 +2,10 @@
   "block.myfirst.first_block": "First Block",
   "item.myfirst.first_block": "Hello world!",
   "block.myfirst.touzi": "random",
-  "item.myfirst.touzi": "random"
+  "item.myfirst.touzi": "random",
+  "item.myfirst.huaji": "huaji",
+  "item.myfirst.counter": "counter",
+  "block.myfirst.counter": "counter",
+
+  "message.myfirst.counter_update": "Count: %d"
 }

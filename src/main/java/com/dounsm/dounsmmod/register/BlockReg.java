@@ -1,6 +1,7 @@
 package com.dounsm.dounsmmod.register;
 
 import com.dounsm.dounsmmod.MyFirst;
+import com.dounsm.dounsmmod.blocks.Counter;
 import com.dounsm.dounsmmod.blocks.FirstBlock;
 import com.dounsm.dounsmmod.blocks.TouZi;
 import net.minecraft.world.item.BlockItem;
@@ -30,6 +31,12 @@ public class BlockReg {
     registryObjectHashMapItem.put(TouZi.m_block_id,ITEMREG.register(TouZi.m_block_id,()->new BlockItem(
       registryObjectHashMapBlock.get(TouZi.m_block_id).get(),
       new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)
+    )));
+
+    registryObjectHashMapBlock.put(Counter.m_block_id, BLOCKREG.register(Counter.m_block_id, Counter::new));
+    registryObjectHashMapItem.put(Counter.m_block_id,ITEMREG.register(Counter.m_block_id,()->new BlockItem(
+      registryObjectHashMapBlock.get(Counter.m_block_id).get(),
+      new Item.Properties().tab(CreativeModeTab.TAB_REDSTONE)
     )));
   }
 }

@@ -1,6 +1,8 @@
 package com.dounsm.dounsmmod;
 
+import com.dounsm.dounsmmod.register.BEReg;
 import com.dounsm.dounsmmod.register.BlockReg;
+import com.dounsm.dounsmmod.register.ItemReg;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,8 +33,12 @@ public class MyFirst {
     IEventBus iEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     BlockReg.BLOCKREG.register(iEventBus);
     BlockReg.ITEMREG.register(iEventBus);
+    ItemReg.ITEMREG.register(iEventBus);
+    BEReg.BEREG.register(iEventBus);
 
     BlockReg.RegAll();
+    ItemReg.RegAll();
+    BEReg.RegAll();
     // Register ourselves for server and other game events we are interested in
     MinecraftForge.EVENT_BUS.register(this);
   }
